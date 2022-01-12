@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Welcome Page</title>
+        <style>
+            body {
+                width: 100%;
+                height: 100vh;
+                background-color: black;
+                color: white;
+                font-family: papyrus;
+                display: flex;
+                flex-flow: column wrap;
+                text-align: center;
+                content-align: center;
+                vertical-align: middle;
+            }
+
+            h1 {
+                font-family: Comic Sans MS;
+                color: rgb(0, 255, 0);
+                border-bottom: 3px solid #3b3b4f;
+            }
+
+            h3 {
+                color: rgb(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+            }
+
+            .auto-input {
+                font-family: papyrus;
+                background-image: url("https://bureau.ru/var/files/img1532613761");
+                background-size: 100% 50px;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-animation: stripes 2s linear infinite;
+                animation: stripes 2s linear infinite;
+                font-size: 20px;
+            }
+            @-webkit-keyframes stripes {
+                100% {
+                background-position: 0 -50px;
+            }
+            }
+
+            p {
+                font-family: Century Gothic;
+                color: yellow;
+            }
+
+            h1, h3, p {
+                margin: auto;
+                text-align: center;
+            }
+
+            h3, p, img {
+                margin-top: 0;
+                padding-top: 0;
+            }
+
+            img {
+                display: flex;
+                flex-flow: column wrap;
+                width: 55vh;
+                height: 55vh;
+                margin: 0 auto;
+                content-align: center;
+                {% comment %} padding: auto; {% endcomment %}
+                padding-bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <h3>Hello, I'm <span class="auto-input"></span></h3>
+        <p>I work as a Web Developer and front end Developer and i love to create beautiful User Interfaces</p>
+        <img src="Hacker.png" alt="Hacker Image" />
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script>
+            let typed = new Typed(".auto-input", {
+                strings: ["Vinay Bansal", "Web Developer", "front-end Developer", "Full-Stack Developer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+        })
+  </script>
+    </body>
+</html>
